@@ -5,8 +5,8 @@ services:
 
   5.4.44-apache:
     image: miguelwill/5.4.44-apache
-    #  depends_on:
-    #  - db
+    depends_on:
+      - db
     volumes:
        - www:/var/www/html
     restart: always
