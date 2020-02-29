@@ -1,6 +1,5 @@
 VERSION
 README.md
 Changelog.md
-apache2.conf
 docker-compose.yml
 docker-compose-db.yml

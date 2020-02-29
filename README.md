@@ -12,6 +12,8 @@ the certificate can be loaded into an external load balancer (such as nginx) so 
 
 # Configuration
 you only need to configure the database access data, and the files must be copied to the path of the loaded volume in /var/www/html
+you have mysql-client to import a mysql database backup into the "db" server from the container console
+
 these parameters are also defined in docker-compose.yml file
 
 # Add Stack with config
