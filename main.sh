@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PHPINI=/usr/local/etc/php/php.ini
+PHPINI=/usr/local/lib/php.ini
 
 echo "date.timezone = \"${TZ:-"UTC"}\"" >> $PHPINI
 echo "memory_limit = ${PHP_MEMORY_LIMIT:-"256M"}" >> $PHPINI
@@ -13,4 +13,4 @@ postconf -e relayhost=${RELAY_HOST:-""}
 
 /etc/init.d/postfix start
 
-exec apache2-foreground
+exec apache2 -DFOREGROUND
