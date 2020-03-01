@@ -3,8 +3,8 @@ version: '3.6'
 
 services:
 
-  5.4.44-apache:
-    image: miguelwill/5.4.44-apache
+  apache2-php53:
+    image: miguelwill/apache2-53
     #  depends_on:
     #  - db
     volumes:

@@ -3,10 +3,10 @@ version: '3.6'
 
 services:
 
-  5.4.44-apache:
-    image: miguelwill/5.4.44-apache
-    depends_on:
-      - db
+  apache2-php53:
+    image: miguelwill/apache2-53
+    #  depends_on:
+    #  - db
     volumes:
        - www:/var/www/html
     restart: always

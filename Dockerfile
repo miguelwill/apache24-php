@@ -1,4 +1,4 @@
-FROM php:5.4.44-apache
+FROM php:5.3.29-apache
 
 LABEL maintainer "miguelwill@gmail.com"
 ENV DEBIAN_FRONTEND noninteractive
