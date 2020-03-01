@@ -1,7 +1,7 @@
 # Apache2 with Postfix on Debian8
-Apache2 over Debian 8 with PHP 5.4.44 and Mod-security
+Apache2 over Debian 8 with PHP 5.4.44 and Postfix
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/miguelwill/php54-apache24.svg?style=plastic)](https://hub.docker.com/r/miguelwill/php54-apache24/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/miguelwill/apache24-php.svg?style=plastic)](https://hub.docker.com/r/miguelwill/apache24-php/)
 
 # Description
 debian8 image with apache2, PHP 5.4.44 and Postfix (based on php:5.4.44-apache image)
@@ -17,7 +17,7 @@ you have mysql-client to import a mysql database backup into the "db" server fro
 these parameters are also defined in docker-compose.yml file
 
 # Add Stack with config
-  * download files from https://github.com/miguelwill/php54-apache24
+  * download files from https://github.com/miguelwill/apache24-php
   * edit docker-compose-db.yml file editing db autentication parameters
   * run for deploy stack : docker stack deploy -c docker-compose.yml debian7-apache2
   * waith for db initialization
